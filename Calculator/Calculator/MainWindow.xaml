@@ -1,0 +1,45 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="WPFIntro" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="10,32,0,0" Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Enter Your Name." VerticalAlignment="Top" FontSize="18" Height="56" Grid.RowSpan="2" Width="138"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,23,34,0" Grid.Column="2"  TextWrapping="Wrap" Text="Welcome To a sample XAML Application. Enjoy!" VerticalAlignment="Top"  FontSize="18"    Grid.ColumnSpan="5"     Height="84"    Width="138" />
+
+
+        <TextBox x:Name="YourName" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="14" Width="120"/>
+        <TextBlock   Grid.Column="3" HorizontalAlignment="Left" Margin="24,39,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Your Name Is:" FontSize="14" VerticalAlignment="Top" Width="114"/>
+        <TextBlock x:Name="ChangeMe" Grid.Column="4" HorizontalAlignment="Left" Margin="10,39,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" FontSize="14" VerticalAlignment="Top" Width="143" Height="23"/>
+        <Button x:Name="Sumbit_Button" FontSize="18" Content="Submit" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="138" Height="64" Click="Button_Click"/>
+        <Button x:Name="ClearButton" FontSize="18" Content="Clear" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="138" Click="ClearButton_Click" Height="64"/>
+        <Button x:Name="ExitButton" FontSize="18" Content="Exit" Grid.Column="4" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="138" Click="ExitButton_Click" Height="64"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,27,0,0" Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Enter #1." VerticalAlignment="Top" FontSize="18" Height="56" Width="138"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Enter #2." VerticalAlignment="Top" FontSize="18" Height="56" Width="138"/>
+        <TextBox x:Name="YourName_Copy" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="14" Width="120"/>
+        <TextBox x:Name="number1" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,30,0,0" Grid.Row="2" TextWrapping="Wrap" Text="number1" VerticalAlignment="Top" FontSize="14" Width="120"/>
+        <TextBox x:Name="number2" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,29,0,0" Grid.Row="3" TextWrapping="Wrap" Text="number2" VerticalAlignment="Top" FontSize="14" Width="120" RenderTransformOrigin="0.482,1.24"/>
+        <TextBlock x:Name="Answer" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="10,30,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Answer" VerticalAlignment="Top" FontSize="14" Width="120"/>
+        <TextBlock x:Name="MathAnswer" Grid.Column="4" HorizontalAlignment="Left" Height="23" Margin="19,30,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Math Answer" VerticalAlignment="Top" FontSize="14" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,32,0,0" Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Enter Your Name." VerticalAlignment="Top" FontSize="18" Height="56" Grid.RowSpan="2" Width="138"/>
+
+
+    </Grid>
+</Window>
